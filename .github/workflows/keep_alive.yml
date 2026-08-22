@@ -1,0 +1,15 @@
+name: Anonymous Keep-Alive Engine
+
+on:
+  schedule:
+    # Se ejecuta cada 14 minutos para mantener el servicio activo 24/7 de forma 100% autónoma
+    - cron: '*/14 * * * *'
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Nexus Reseller Core
+        run: |
+          curl -s -f "https://nexus-reseller-hub.onrender.com/health" || echo "Ping enviado"
