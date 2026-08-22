@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Digital Store - Telegram Mini App</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --accent-color: #10b981;
+            --text-color: #f0f6fc;
+            --subtext-color: #8b949e;
+            --border-color: #30363d;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 16px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            font-size: 20px;
+            margin: 0;
+            color: var(--accent-color);
+        }
+        .header p {
+            font-size: 12px;
+            color: var(--subtext-color);
+            margin-top: 4px;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+        }
+        .product-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .product-info h3 {
+            margin: 0 0 4px 0;
+            font-size: 15px;
+        }
+        .product-info p {
+            margin: 0;
+            font-size: 12px;
+            color: var(--subtext-color);
+        }
+        .product-price {
+            text-align: right;
+        }
+        .price-tag {
+            font-size: 16px;
+            font-weight: bold;
+            color: var(--accent-color);
+            margin-bottom: 6px;
+        }
+        .buy-btn {
+            background: var(--accent-color);
+            color: #000;
+            border: none;
+            padding: 6px 14px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 12px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>💎 Nexus Digital Premium Store</h1>
+        <p>Entregas Instantáneas 24/7 | Pagos Seguros en USDT Cripto</p>
+    </div>
+
+    <div class="product-grid" id="catalog">
+        <!-- Tarjeta Gemini 18m -->
+        <div class="product-card">
+            <div class="product-info">
+                <h3>🚀 Gemini Pro 18 Meses</h3>
+                <p>Enlace de activación oficial directo</p>
+            </div>
+            <div class="product-price">
+                <div class="price-tag">$3.65 USDT</div>
+                <button class="buy-btn" onclick="buyProduct(101, 'Gemini Pro 18m', 3.65)">Comprar</button>
+            </div>
+        </div>
+
+        <!-- Tarjeta LinkedIn 3m -->
+        <div class="product-card">
+            <div class="product-info">
+                <h3>💼 LinkedIn Career 3 Meses</h3>
+                <p>Premium Career Activation Link</p>
+            </div>
+            <div class="product-price">
+                <div class="price-tag">$4.18 USDT</div>
+                <button class="buy-btn" onclick="buyProduct(102, 'LinkedIn Career 3m', 4.18)">Comprar</button>
+            </div>
+        </div>
+
+        <!-- Tarjeta Netflix -->
+        <div class="product-card">
+            <div class="product-info">
+                <h3>📺 Netflix Premium Head</h3>
+                <p>Slot Ultra HD 4K 1 Mes</p>
+            </div>
+            <div class="product-price">
+                <div class="price-tag">$4.95 USDT</div>
+                <button class="buy-btn" onclick="buyProduct(103, 'Netflix 1m', 4.95)">Comprar</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const tg = window.Telegram.WebApp;
+        tg.expand();
+
+        function buyProduct(id, name, price) {
+            tg.sendData(JSON.stringify({
+                action: "buy",
+                product_id: id,
+                product_name: name,
+                price_usdt: price
+            }));
+            tg.close();
+        }
+    </script>
+</body>
+</html>

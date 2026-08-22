@@ -1,0 +1,13 @@
+# Anonymous Repository Protection
+.env
+.env.*
+*.db
+*.sqlite
+*.log
+*.key
+*.pem
+*.json
+__pycache__/
+.pytest_cache/
+.coverage
+htmlcov/
