@@ -104,15 +104,8 @@ BOT_DEFINITIONS = {
         "token": os.getenv("BOT_TOKEN_DEVCORE", "YOUR_TELEGRAM_BOT_TOKEN"),
         "tagline": "💻 Herramientas de Desarrollo, IDEs & Cloud Computing",
         "emoji": "💻"
-    },
-    "cybervault": {
-        "key": "cybervault",
-        "name": "CyberVault Keys Store",
-        "username": "@cybervault_keys_bot",
-        "token": os.getenv("BOT_TOKEN_CYBERVAULT", "YOUR_TELEGRAM_BOT_TOKEN"),
-        "tagline": "🔐 Cuentas Premium, VPNs & Privacidad Digital",
-        "emoji": "🔐"
     }
+    # CyberVault (@cybervault_keys_bot) corre exclusivamente en Pella.app vía Polling
 }
 
 # Base de Datos JSON Centralizada
