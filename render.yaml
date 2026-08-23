@@ -9,9 +9,23 @@ services:
         sync: false
       - key: RESELLER_API_KEY
         sync: false
+      - key: RESELLER_BASE_URL
+        sync: false
       - key: ADMIN_TELEGRAM_ID
         sync: false
       - key: DEPOSIT_WALLET_BSC
         sync: false
       - key: DEPOSIT_WALLET_TRON
         sync: false
+      - key: DEPOSIT_WALLET_BTC
+        sync: false
+      - key: DEPOSIT_WALLET_SOL
+        sync: false
+      - key: SUPPLIER_WALLET_BSC
+        sync: false
+      - key: SUPPLIER_WALLET_TRON
+        sync: false
+      - key: RUN_MODE
+        value: webhook
+      - key: WEBHOOK_URL
+        value: https://nexus-reseller-hub.onrender.com/webhook
