@@ -379,7 +379,7 @@ async def lifespan(app: FastAPI):
             start_c, admin_c, saldo_c, cb_q = make_handlers_for_bot(key, info)
 
             bot_app.add_handler(CommandHandler("start", start_c))
-            bot_app.add_handler(CommandHandler("admin", admin_cmd))
+            bot_app.add_handler(CommandHandler("admin", admin_c))
             bot_app.add_handler(CommandHandler("dar_saldo", saldo_c))
             bot_app.add_handler(CommandHandler("catalogo", lambda u, c, sc=start_c: sc(u, c)))
             bot_app.add_handler(CallbackQueryHandler(cb_q))
