@@ -29,8 +29,8 @@ from telegram.ext import (
     ContextTypes
 )
 
-BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "8918777311:AAFXqk2CSj_y77WtG3hyQ50WAtHCENiZFmE")
-BUNNY_API_KEY = os.getenv("RESELLER_API_KEY", "bai_sk_4a557cbb3c136090682510a41a13585560feff74e56eaa0e")
+BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "YOUR_TELEGRAM_BOT_TOKEN")
+BUNNY_API_KEY = os.getenv("RESELLER_API_KEY", "YOUR_BUNNY_API_KEY")
 BUNNY_API_URL = os.getenv("RESELLER_BASE_URL", "https://bhao.site/api/reseller/v1")
 ADMIN_ID = int(os.getenv("ADMIN_TELEGRAM_ID", "1849945160"))
 

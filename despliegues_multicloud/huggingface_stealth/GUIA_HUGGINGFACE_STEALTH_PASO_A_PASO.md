@@ -79,8 +79,8 @@ flowchart TD
 | :--- | :--- | :--- |
 | `HF_TOKEN` | `hf_tu_token_aqui` | Para descargar el `bot_core.py` del Dataset privado |
 | `DATASET_REPO` | `pedrogomez260625/reseller-core-vault` | Ruta exacta de tu dataset privado |
-| `TELEGRAM_BOT_TOKEN` | `8870399329:AAG9Co0upODc7UJ_QgodmgaQiORNPc9jTX4` | Token de `@nova_ai_keys_bot` |
-| `RESELLER_API_KEY` | `bai_sk_4a557cbb3c136090682510a41a13585560feff74e56eaa0e` | Clave API de Bunny Tools |
+| `TELEGRAM_BOT_TOKEN` | `YOUR_TELEGRAM_BOT_TOKEN` | Token de `@nova_ai_keys_bot` |
+| `RESELLER_API_KEY` | `YOUR_BUNNY_API_KEY` | Clave API de Bunny Tools |
 | `ADMIN_TELEGRAM_ID` | `1849945160` | Tu ID de Telegram (@Cctes001) |
 
 4. Guarda los secretos. Hugging Face reiniciará el Space automáticamente.

@@ -14,12 +14,12 @@ class Settings(BaseSettings):
     DEBUG: bool = False
 
     # Upstream Provider Configuration (Bunny Tools)
-    RESELLER_API_KEY: Optional[str] = "bai_sk_4a557cbb3c136090682510a41a13585560feff74e56eaa0e"
+    RESELLER_API_KEY: Optional[str] = "YOUR_BUNNY_API_KEY"
     RESELLER_BASE_URL: str = "https://bhao.site/api/reseller/v1"
     DEFAULT_MARKUP_USDT: float = 3.0
 
     # Telegram Bot Configuration
-    TELEGRAM_BOT_TOKEN: Optional[str] = "8873710791:AAEKEolVYTYoeYE45JLZKPlG__DpBUbU5yg"
+    TELEGRAM_BOT_TOKEN: Optional[str] = "YOUR_TELEGRAM_BOT_TOKEN"
     ADMIN_TELEGRAM_ID: Optional[int] = 1849945160
 
     # Billeteras de Cobro (Pedro Gomez / MetaMask)

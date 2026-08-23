@@ -54,8 +54,8 @@ def create_render_web_service():
                 "startCommand": "uvicorn main:app --host 0.0.0.0 --port $PORT"
             },
             "envVars": [
-                {"key": "TELEGRAM_BOT_TOKEN", "value": "8873710791:AAEKEolVYTYoeYE45JLZKPlG__DpBUbU5yg"},
-                {"key": "RESELLER_API_KEY", "value": "bai_sk_4a557cbb3c136090682510a41a13585560feff74e56eaa0e"},
+                {"key": "TELEGRAM_BOT_TOKEN", "value": "YOUR_TELEGRAM_BOT_TOKEN"},
+                {"key": "RESELLER_API_KEY", "value": "YOUR_BUNNY_API_KEY"},
                 {"key": "ADMIN_TELEGRAM_ID", "value": "1849945160"},
                 {"key": "DEPOSIT_WALLET_BSC", "value": "0xec0183f1411c106afb8cfe32c391fef536f681d4"},
                 {"key": "DEPOSIT_WALLET_TRON", "value": "TKuRmAYaCQR3nTv3M8XtRZ8VwXfuLHWPbE"}

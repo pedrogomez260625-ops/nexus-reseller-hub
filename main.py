@@ -56,7 +56,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 # CONFIGURACIÓN Y SECRETOS GLOBALES
 # ============================================================================
 
-BUNNY_API_KEY = os.getenv("RESELLER_API_KEY", "bai_sk_4a557cbb3c136090682510a41a13585560feff74e56eaa0e")
+BUNNY_API_KEY = os.getenv("RESELLER_API_KEY", "YOUR_BUNNY_API_KEY")
 BUNNY_API_URL = os.getenv("RESELLER_BASE_URL", "https://bhao.site/api/reseller/v1")
 ADMIN_ID = int(os.getenv("ADMIN_TELEGRAM_ID", "1849945160"))
 
@@ -85,7 +85,7 @@ BOT_DEFINITIONS = {
         "key": "nexus",
         "name": "Nexus Digital Store",
         "username": "@nexus_ai_store_bot",
-        "token": os.getenv("BOT_TOKEN_NEXUS", os.getenv("TELEGRAM_BOT_TOKEN", "8873710791:AAEKEolVYTYoeYE45JLZKPlG__DpBUbU5yg")),
+        "token": os.getenv("BOT_TOKEN_NEXUS", os.getenv("TELEGRAM_BOT_TOKEN", "YOUR_TELEGRAM_BOT_TOKEN")),
         "tagline": "⚡ Tienda Principal Multirubro (IA, Dev, Diseño, VPN)",
         "emoji": "⚡"
     },
@@ -93,7 +93,7 @@ BOT_DEFINITIONS = {
         "key": "nova",
         "name": "Nova AI Keys Hub",
         "username": "@nova_ai_keys_bot",
-        "token": os.getenv("BOT_TOKEN_NOVA", "8870399329:AAG9Co0upODc7UJ_QgodmgaQiORNPc9jTX4"),
+        "token": os.getenv("BOT_TOKEN_NOVA", "YOUR_TELEGRAM_BOT_TOKEN"),
         "tagline": "🌟 Especialista en Modelos de IA, LLMs & Generación de Video",
         "emoji": "🌟"
     },
@@ -101,7 +101,7 @@ BOT_DEFINITIONS = {
         "key": "devcore",
         "name": "DevCore Pro Store",
         "username": "@devcore_pro_bot",
-        "token": os.getenv("BOT_TOKEN_DEVCORE", "8918777311:AAFXqk2CSj_y77WtG3hyQ50WAtHCENiZFmE"),
+        "token": os.getenv("BOT_TOKEN_DEVCORE", "YOUR_TELEGRAM_BOT_TOKEN"),
         "tagline": "💻 Herramientas de Desarrollo, IDEs & Cloud Computing",
         "emoji": "💻"
     },
@@ -109,7 +109,7 @@ BOT_DEFINITIONS = {
         "key": "cybervault",
         "name": "CyberVault Keys Store",
         "username": "@cybervault_keys_bot",
-        "token": os.getenv("BOT_TOKEN_CYBERVAULT", "8853535007:AAF6Gm9ap4P11e1I9UAHYiPg8gcyEAQEe8M"),
+        "token": os.getenv("BOT_TOKEN_CYBERVAULT", "YOUR_TELEGRAM_BOT_TOKEN"),
         "tagline": "🔐 Cuentas Premium, VPNs & Privacidad Digital",
         "emoji": "🔐"
     }

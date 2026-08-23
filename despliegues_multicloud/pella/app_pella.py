@@ -19,9 +19,9 @@ import threading
 if sys.platform == "win32":
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
 
-BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "8853535007:AAF6Gm9ap4P11e1I9UAHYiPg8gcyEAQEe8M")
+BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "YOUR_TELEGRAM_BOT_TOKEN")
 TELEGRAM_API = f"https://api.telegram.org/bot{BOT_TOKEN}"
-BUNNY_API_KEY = os.getenv("RESELLER_API_KEY", "bai_sk_4a557cbb3c136090682510a41a13585560feff74e56eaa0e")
+BUNNY_API_KEY = os.getenv("RESELLER_API_KEY", "YOUR_BUNNY_API_KEY")
 BUNNY_API_URL = os.getenv("RESELLER_BASE_URL", "https://bhao.site/api/reseller/v1")
 ADMIN_ID = int(os.getenv("ADMIN_TELEGRAM_ID", "1849945160"))
 

@@ -48,8 +48,8 @@ logger = logging.getLogger("NovaAIHub-HF")
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # Bot Nova AI Keys
-BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "8870399329:AAG9Co0upODc7UJ_QgodmgaQiORNPc9jTX4")
-BUNNY_API_KEY = os.getenv("RESELLER_API_KEY", os.getenv("BUNNY_API_KEY", "bai_sk_4a557cbb3c136090682510a41a13585560feff74e56eaa0e"))
+BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "YOUR_TELEGRAM_BOT_TOKEN")
+BUNNY_API_KEY = os.getenv("RESELLER_API_KEY", os.getenv("BUNNY_API_KEY", "YOUR_BUNNY_API_KEY"))
 BUNNY_API_URL = os.getenv("RESELLER_BASE_URL", "https://bhao.site/api/reseller/v1")
 ADMIN_ID = int(os.getenv("ADMIN_TELEGRAM_ID", "1849945160"))
 

@@ -40,8 +40,8 @@
    - `requirements.txt`
    - `README.md`
 4. En **Settings > Variables and secrets**, agrega:
-   - `TELEGRAM_BOT_TOKEN`: `8870399329:AAG9Co0upODc7UJ_QgodmgaQiORNPc9jTX4`
-   - `RESELLER_API_KEY`: `bai_sk_4a557cbb3c136090682510a41a13585560feff74e56eaa0e`
+   - `TELEGRAM_BOT_TOKEN`: `YOUR_TELEGRAM_BOT_TOKEN`
+   - `RESELLER_API_KEY`: `YOUR_BUNNY_API_KEY`
    - `ADMIN_TELEGRAM_ID`: `1849945160`
 5. ¡Listo! El Space compila en 30 segundos y `@nova_ai_keys_bot` queda 100% activo 24/7.
 

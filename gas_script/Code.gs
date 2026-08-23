@@ -3,8 +3,8 @@
 // Replicación completa de Bunny Tools con Menús Inline, Categorías y Entrega 1-Seg
 // ============================================================================
 
-var BOT_TOKEN = "8873710791:AAEKEolVYTYoeYE45JLZKPlG__DpBUbU5yg";
-var BUNNY_API_KEY = "bai_sk_4a557cbb3c136090682510a41a13585560feff74e56eaa0e";
+var BOT_TOKEN = "YOUR_TELEGRAM_BOT_TOKEN";
+var BUNNY_API_KEY = "YOUR_BUNNY_API_KEY";
 var ADMIN_ID = 1849945160; // @Cctes001
 var TELEGRAM_API = "https://api.telegram.org/bot" + BOT_TOKEN;
 
