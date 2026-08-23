@@ -5,6 +5,14 @@ services:
     buildCommand: pip install -r requirements.txt
     startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
     envVars:
+      - key: BOT_TOKEN_NEXUS
+        sync: false
+      - key: BOT_TOKEN_NOVA
+        sync: false
+      - key: BOT_TOKEN_DEVCORE
+        sync: false
+      - key: BOT_TOKEN_CYBERVAULT
+        sync: false
       - key: TELEGRAM_BOT_TOKEN
         sync: false
       - key: RESELLER_API_KEY
@@ -27,5 +35,5 @@ services:
         sync: false
       - key: RUN_MODE
         value: webhook
-      - key: WEBHOOK_URL
-        value: https://nexus-reseller-hub.onrender.com/webhook
+      - key: BASE_WEBHOOK_URL
+        value: https://nexus-reseller-hub.onrender.com
